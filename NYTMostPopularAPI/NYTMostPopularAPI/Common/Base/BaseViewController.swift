@@ -15,4 +15,12 @@ protocol BaseViewControllerProtocol: AnyObject {
 
 class BaseViewController: UIViewController, BaseViewControllerProtocol {
     
+    // MARK: - Object Life Cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 }

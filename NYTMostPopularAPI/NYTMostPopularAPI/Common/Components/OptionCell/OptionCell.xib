@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="46" id="KGk-i7-Jjw" customClass="OptionCell" customModule="NYTMostPopularAPI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="45.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4L-pe-9TV" customClass="CheckBoxButton" customModule="NYTMostPopularAPI" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="8hI-Ix-LWC"/>
+                            <constraint firstAttribute="width" constant="25" id="XZd-bq-la8"/>
+                        </constraints>
+                        <connections>
+                            <action selector="didTapOnButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BX0-5b-hCR"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BP3-Jh-GNo">
+                        <rect key="frame" x="45" y="16" width="28.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0K-Qa-Qix" customClass="CheckBoxButton" customModule="NYTMostPopularAPI" customModuleProvider="target">
+                        <rect key="frame" x="103.5" y="10.5" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="MQm-EF-0mD"/>
+                            <constraint firstAttribute="height" constant="25" id="kzM-sj-q6e"/>
+                        </constraints>
+                        <connections>
+                            <action selector="didTapOnButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NaW-FY-PMR"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYb-ih-3cT">
+                        <rect key="frame" x="138.5" y="16.5" width="28.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWl-Eb-3iM" customClass="CheckBoxButton" customModule="NYTMostPopularAPI" customModuleProvider="target">
+                        <rect key="frame" x="197" y="10" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="FpN-Av-k5a"/>
+                            <constraint firstAttribute="height" constant="25" id="sSh-th-Oo1"/>
+                        </constraints>
+                        <connections>
+                            <action selector="didTapOnButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="F47-V7-VFJ"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A49-Pp-uS8">
+                        <rect key="frame" x="232" y="16" width="28.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="J4L-pe-9TV" secondAttribute="bottom" constant="10" id="0Pp-bd-V3D"/>
+                    <constraint firstItem="BP3-Jh-GNo" firstAttribute="centerY" secondItem="J4L-pe-9TV" secondAttribute="centerY" id="A25-Bt-nwL"/>
+                    <constraint firstItem="J4L-pe-9TV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="E8x-cc-wNk"/>
+                    <constraint firstItem="A49-Pp-uS8" firstAttribute="centerY" secondItem="KWl-Eb-3iM" secondAttribute="centerY" id="EZE-iC-9UL"/>
+                    <constraint firstItem="A49-Pp-uS8" firstAttribute="leading" secondItem="KWl-Eb-3iM" secondAttribute="trailing" constant="10" id="Fir-4J-MAz"/>
+                    <constraint firstItem="J4L-pe-9TV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="GWh-Mh-Z3K"/>
+                    <constraint firstItem="BP3-Jh-GNo" firstAttribute="leading" secondItem="J4L-pe-9TV" secondAttribute="trailing" constant="10" id="On4-eV-nO1"/>
+                    <constraint firstItem="cYb-ih-3cT" firstAttribute="leading" secondItem="n0K-Qa-Qix" secondAttribute="trailing" constant="10" id="U37-wf-BOc"/>
+                    <constraint firstItem="n0K-Qa-Qix" firstAttribute="centerY" secondItem="BP3-Jh-GNo" secondAttribute="centerY" id="Zjh-hI-K4m"/>
+                    <constraint firstItem="KWl-Eb-3iM" firstAttribute="leading" secondItem="cYb-ih-3cT" secondAttribute="trailing" constant="30" id="aeq-s6-3TL"/>
+                    <constraint firstItem="KWl-Eb-3iM" firstAttribute="centerY" secondItem="cYb-ih-3cT" secondAttribute="centerY" id="dVb-rk-I9a"/>
+                    <constraint firstItem="cYb-ih-3cT" firstAttribute="centerY" secondItem="n0K-Qa-Qix" secondAttribute="centerY" id="slv-Ye-9ox"/>
+                    <constraint firstItem="n0K-Qa-Qix" firstAttribute="leading" secondItem="BP3-Jh-GNo" secondAttribute="trailing" constant="30" id="zqk-cC-qkq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="element1Btn" destination="J4L-pe-9TV" id="f8P-yW-Vgd"/>
+                <outlet property="element1Label" destination="BP3-Jh-GNo" id="4hq-cX-Ykz"/>
+                <outlet property="element2Btn" destination="n0K-Qa-Qix" id="Wrr-e6-z68"/>
+                <outlet property="element2Label" destination="cYb-ih-3cT" id="rKZ-25-SWF"/>
+                <outlet property="element3Btn" destination="KWl-Eb-3iM" id="q2I-3F-qFk"/>
+                <outlet property="element3Label" destination="A49-Pp-uS8" id="q63-Vb-ayD"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="100"/>
+        </tableViewCell>
+    </objects>
+</document>
