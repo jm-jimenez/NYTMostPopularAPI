@@ -9,9 +9,14 @@
 import Foundation
 
 protocol BaseInteractorOutputProtocol: AnyObject {
-
+    func showError(error: BaseError)
 }
 
 class BasePresenter: BaseInteractorOutputProtocol {
     weak var baseView: BaseViewControllerProtocol?
+    
+    func showError(error: BaseError) {
+        baseView?.hideLoading()
+        baseView?.showError(error)
+    }
 }

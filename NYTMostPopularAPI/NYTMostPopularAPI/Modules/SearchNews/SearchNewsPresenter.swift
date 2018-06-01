@@ -16,6 +16,7 @@ protocol SearchNewsPresenterProtocol {
 
 protocol SearchNewsInteractorOutputProtocol: BaseInteractorOutputProtocol {
     func updateViewModelsWith(_ rowModels: [RowModel])
+    func navigateToResults(path: String)
 }
 
 class SearchNewsPresenter: BasePresenter, SearchNewsPresenterProtocol, SearchNewsInteractorOutputProtocol {
@@ -53,5 +54,9 @@ class SearchNewsPresenter: BasePresenter, SearchNewsPresenterProtocol, SearchNew
         let row3Selected = rowModels.count > 2 ? rowModels[2].configItems.filter({ $0.isSelected }).count > 0 : true
         
         view?.shouldEnableNextButton(row1Selected && row2Selected && row3Selected)
+    }
+    
+    func navigateToResults(path: String) {
+        NewsResultsWireframe(path: path).present()
     }
 }

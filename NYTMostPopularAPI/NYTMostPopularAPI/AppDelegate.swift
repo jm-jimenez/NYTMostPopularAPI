@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let homeVC: UIViewController = SearchNewsWireframe().viewController
+        let homeVC: UINavigationController = UINavigationController(rootViewController: SearchNewsWireframe().viewController)
         window?.rootViewController = homeVC
         window?.makeKeyAndVisible()
         

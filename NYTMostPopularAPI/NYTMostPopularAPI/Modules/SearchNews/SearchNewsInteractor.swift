@@ -67,7 +67,7 @@ class SearchNewsInteractor: SearchNewsInteractorInputProtocol {
                 path.append("\(unwrapFilter[0].description)/")
             }
         }
-        path.append("\(periodFilterUnwrap.description).json?api-key=32534511931e4dc1b5627b6918ca0d6b")
-        print(path)
+        path.append("\(periodFilterUnwrap.description).json")
+        presenter?.navigateToResults(path: path)
     }
 }

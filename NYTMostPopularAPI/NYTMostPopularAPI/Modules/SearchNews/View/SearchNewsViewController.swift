@@ -31,6 +31,7 @@ class SearchNewsViewController: BaseViewController, SearchNewsViewControllerProt
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
+        nextBtn.isEnabled = false
     }
     
     // MARK: - Private methods
